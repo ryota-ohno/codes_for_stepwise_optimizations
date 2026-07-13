@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crystal-structure-prediction"
+version = "1.0.0"
+description = "Workflow for crystal structure prediction based on stepwise optimization of intermolecular interactions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Ryota Ono" }
+]
+
+keywords = [
+    "crystal structure prediction",
+    "organic semiconductors",
+    "molecular packing",
+    "computational chemistry"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Topic :: Scientific/Engineering :: Physics"
+]
+
+dependencies = [
+    "numpy==2.1.2",
+    "pandas==2.2.3",
+    "matplotlib==3.10.1"
+]
