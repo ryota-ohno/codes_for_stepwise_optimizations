@@ -1,16 +1,16 @@
-This is workflow where we calculate XRD pattern with optimized lattice parameters.
-We also prepared the code for experimental structures so that we can compare with each other.
+This workflow calculates X-ray diffraction (XRD) powder patterns using optimized lattice parameters. We also provide a workflow for experimental crystal structures, allowing direct comparison between calculated and experimental XRD patterns.
 
-The file format is .ipynb for Jupyter notebook since we use this code just for visuallizing.
-You excuse each cell in the order then you input your parameters and molecular coordinates files.
-Parameters are shown in our paper so we add molecular coordinates file (.xyz).
+The workflow is provided as Jupyter notebooks (.ipynb), as the code is primarily intended for visualization and data analysis. Simply execute the notebook cells in order, then provide your input parameters and molecular coordinate files.
 
-We first calculate reciplocal lattice vector from optimized or experimental lattice vector.
-We also calculate atom scattering factors and the sturucture factor.
-By combining these values and sharp Laue's function where N=20000 we can calculate xrd powder pattern.
-Lorentz's polarization factor is added in this calculation.
+The optimized lattice parameters used in our study are reported in our paper. We also include the corresponding molecular coordinate files (.xyz).
 
-directry tree
+The workflow performs the following steps:
+1. Calculates the reciprocal lattice vectors from the optimized or experimental lattice vectors.
+2. Computes atomic scattering factors and the crystal structure factor.
+3. Combines these quantities with a finite-size Laue function (N = 20,000) to calculate the XRD powder pattern.
+4. Applies the Lorentz–polarization correction factor to obtain the final diffraction intensity.
+
+Directry structures
 XRD_pattern/
 ├── src/
 │   └── powder_pattern_model.ipynb
@@ -22,4 +22,5 @@ XRD_pattern/
     └── X.txt contains coeficients of atom scattering factors.
 
 Acknowledgement
-This workflow was developved by Mr. Arai and Mr. Koyama.
+The workflow included in this repository is based on code originally developed by Dr. Shunto Arai and Mr. Kanata Koyama. 
+We gratefully acknowledge their contribution to the development of the XRD calculation workflow.
