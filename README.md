@@ -15,8 +15,8 @@ Sub-workflows are also prepared: transfer integral calculations for multiple mol
 
 ## Features
 
-- Stepwise optimization of molecular packing
-- Transfer integral calculations 
+- Stepwise optimization of molecular arrangements
+- Transfer integral calculations of multiple molecular packings
 - XRD-powder-pattern calculations
 - Calculation of total intermolecular interaction energy
 - atomic coordinates of polyacene monomers
